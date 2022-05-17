@@ -1,0 +1,15 @@
+Multi_Module 
+- Multi_Module : 
+	+ Một dự án nhiều mô-đun được xây dựng từ một POM tổng hợp quản lý một nhóm các mô-đun con. Trong hầu hết các trường hợp, bộ tổng hợp nằm trong thư mục gốc của dự án và phải có bao bì loại  pom .
+	+ Các mô-đun con là các dự án Maven thông thường và chúng có thể được xây dựng riêng biệt hoặc thông qua POM tổng hợp.
+	+ Bằng cách xây dựng dự án thông qua POM tổng hợp, mỗi dự án có kiểu đóng gói khác với pom sẽ dẫn đến một tệp lưu trữ được xây dựng.
+	+ lợi ích : giảm sự trùng lặp , chia sẻ 1 lượng lớn cấu hình với các module khác
+- cấu tạo Multi_module : 
+	+ Parent POM : hiểu ngầm là superPom bao gồm các cấu hình của dự án parent
+	+ Submodules : Module con hoặc subprojects kế thừa từ parentPOM
+Bước 1 : Tạo project parent
+Bước 2 : tạo các module con , chọn file POM của projectParent
+Bước 3 Tạo sự liên kết giữa các module con và projectParent bằng cách chỉnh sửa file POM
+Bước 4 : khai báo dependency projectB trong file POM projectA
+Bước 5 : Sử dụng
+
